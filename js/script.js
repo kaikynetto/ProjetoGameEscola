@@ -3,14 +3,21 @@ const pipe = document.querySelector('.pipe');
 const audioJump = document.querySelector('.audiojump');
 const gameOver = document.querySelector('.gameover');
 const textStart = document.querySelector('#text-start')
+var counterVal = 0;
+
 
 const jump = () => {
     mario.classList.add('jump');
+    counterVal++;
+    document.getElementById("score").innerHTML = `<h1>Você pulou ${counterVal} obstáculos!</h1>`;
+    
+    if(counterVal == 100) {
+        window.location.href = "./winner.html";
+    }
 
     audioJump.currentTime = 0.1;
     audioJump.volume = 0.1;
     audioJump.play();
-
     setTimeout(() => {
         mario.classList.remove('jump');
     }, 500);
