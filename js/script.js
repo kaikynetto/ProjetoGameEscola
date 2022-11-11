@@ -43,6 +43,9 @@ const loop = setInterval(() => {
         gameOver.play();
 
         document.getElementById("text-start").style.color = "black";
+        setTimeout(() => {
+            window.location.href = "./looser.html";
+        }, 1000);
         document.getElementById("text-start").innerHTML = "<strong>VOCÊ PERDEU, APERTE F5</strong>";
 
         clearInterval(loop);
