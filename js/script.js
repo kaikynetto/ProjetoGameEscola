@@ -11,7 +11,7 @@ const jump = () => {
     counterVal++;
     document.getElementById("score").innerHTML = `<h1>Você pulou ${counterVal} vezes!</h1>`;
     
-    if(counterVal == 100) {
+    if(counterVal == 10000) {
         window.location.href = "./winner.html";
     }
 
