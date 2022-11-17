@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Sora', sans-serif;
+}
+
+p {
+    font-family: 'Press Start 2P', monospace;
+    padding-top: 1.5%;
+    text-align: center;
+    color: black;
+}
+
+.game-board {
+    width: 100%;
+    height: 90vh;
+    border-bottom: 15px solid green;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF) ;
+}
+
+.game-board-looser {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    display: block;
+    background: linear-gradient(#fe746a, hsl(4, 56%, 47%)) ;
+}
+
+.looser-button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+}
+
+.looser-button:hover {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.game-board-winner {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF) ;
+}
+
+.winner-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 110px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.robot {
+    position: absolute;
+    bottom: 0;
+    width: 110px;
+    animation: robot-animation 1.5s infinite linear;
+}
+
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 10s infinite linear;
+}
+
+.menu-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 400px;
+    display: flex;
+    height: 300px;
+    text-align: center;
+    display: inline-block
+}
+
+.button {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 120px;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.button:hover {
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    border: none;
+    cursor: pointer;
+    
+    padding: 10px;
+    width: 120px;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes robot-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
