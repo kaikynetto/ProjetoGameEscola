@@ -115,6 +115,11 @@ p {
     height: 100%;
 }
 
+.buttonin {
+    background-color: transparent;
+    border-color: transparent;
+}
+
 .logo {
     width: 400px;
     display: flex;
