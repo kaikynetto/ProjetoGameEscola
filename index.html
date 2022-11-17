@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <!--Meta Settings-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-
-    <!--Link Stylesheet-->
+    <title>Menu</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <!--Title-->
-    <title>Mario Jump</title>
 </head>
 <body>
-    <!--Game-->
-    <audio src="audio/jump_song.mp3" class="audiojump"></audio>
-    <audio src="audio/game_over.mp3" class="gameover"></audio>
     <div class="game-board">
         <img src="img/clouds.png" class="clouds">
-        <img src="img/mario.gif" class="mario">
-        <img src="img/pipe.png" class="pipe">
-    
+        <div class="menu-container">
+            <img src="img/logo.png" class="logo">
+            <div>
+                <button onclick="window.location.href='./game.html'" class="button">Iniciar</button>
+            </div>
+        </div>
     </div>
-    <p id="text-start"></p>
-    <p id="score"></p>
-    <!--Script-->
-    <script src="js/script.js" onclick="jump"></script>
 </body>
 </html>
