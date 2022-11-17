@@ -9,7 +9,7 @@ var counterVal = 0;
 const jump = () => {
     mario.classList.add('jump');
     counterVal++;
-    document.getElementById("score").innerHTML = `<h1>Você pulou ${counterVal} obstáculos!</h1>`;
+    document.getElementById("score").innerHTML = `<h1>Você pulou ${counterVal} vezes!</h1>`;
     
     if(counterVal == 100) {
         window.location.href = "./winner.html";
