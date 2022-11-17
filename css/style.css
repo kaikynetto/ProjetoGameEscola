@@ -110,6 +110,7 @@ p {
     justify-content: center;
     text-align: center;
     display: inline-block;
+    background: linear-gradient(#87CEEB, #E0F6FF) ;
     justify-items: center;
     width: 100%;
     height: 100%;
